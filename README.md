@@ -13,6 +13,6 @@ To `make a new folder` use this code:
 mkdir test
 ```
 
-This is how we make a github readme file
+This is how we make a github readme file.
 
 ----
