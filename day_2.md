@@ -17,8 +17,8 @@ The following bash script ("fastqc.sh") was created in the $HOME directory:
 #SBATCH --mem=10G
 #SBATCH --time=1:00:00
 #SBATCH --job-name=fastqc
-#SBATCH --output=/work_beegfs/sunam237/fastqc.out
-#SBATCH --error=/work_beegfs/sunam237/fastqc.err
+#SBATCH --output=/work_beegfs/sunam237/metagenomics/fastqc.out
+#SBATCH --error=/work_beegfs/sunam237/metagenomics/fastqc.err
 #SBATCH --partition=all
 #SBATCH --reservation=biol217
 
@@ -54,8 +54,8 @@ The following bash script ("fastp.sh") was created for the FASTP process:
 #SBATCH --mem=10G
 #SBATCH --time=1:00:00
 #SBATCH --job-name=fastp
-#SBATCH --output=/work_beegfs/sunam237/fastp.out
-#SBATCH --error=/work_beegfs/sunam237/fastp.err
+#SBATCH --output=/work_beegfs/sunam237/metagenomics/fastp.out
+#SBATCH --error=/work_beegfs/sunam237/metagenomics/fastp.err
 #SBATCH --partition=all
 #SBATCH --reservation=biol217
 
@@ -94,8 +94,8 @@ The following bash script ("assembly_megahit.sh") was created for the assembly (
 #SBATCH --mem=10G
 #SBATCH --time=1:00:00
 #SBATCH --job-name=megahit
-#SBATCH --output=/work_beegfs/sunam237/megahit.out
-#SBATCH --error=/work_beegfs/sunam237/megahit.err
+#SBATCH --output=/work_beegfs/sunam237/metagenomics/megahit.out
+#SBATCH --error=/work_beegfs/sunam237/metagenomics/megahit.err
 #SBATCH --partition=all
 #SBATCH --reservation=biol217
 
