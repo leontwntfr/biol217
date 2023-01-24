@@ -1,6 +1,6 @@
 # Day 2
 
-## Metagenomics: Quality Control with FASTQC and FASTP and Assembly with MEGAHIT
+## Metagenomics: Quality Control with FASTQC and FASTP, Assembly with MEGAHIT
 
 The sample data folder "0_raw_reads" was copied from `/home/sunam226/Day2/` to a previously created folder (`mkdir metagenomics/`) on `/work_beegfs/sunam237/` by:
 
