@@ -26,3 +26,9 @@ We changed something again.
 ----
 
 Create a hyperlink: [LINK](https://github.com/leontwntfr/biol217)
+
+----
+
+Add an image:
+
+ ![image](./resources/g4275.png)
