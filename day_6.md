@@ -2,16 +2,16 @@
 
 ## Evaluation of starting databases
 
-Accessing the interactive interface for evaluation of databases in "/Day6/02_contigs-dbs". Start server with following commands. First, run on node on HPC:
+The interactive interface for evaluation of databases in "/Day6/02_contigs-dbs" were accessed. The server was started with following commands. First, a node was accessed on the HPC:
 
 ```
 srun --reservation=biol217 --pty --mem=10G --nodes=1 --tasks-per-node=1 --cpus-per-task=1 /bin/bash
 ```
-Activate conda environment:
+The conda environment was activated on that node:
 ```
 conda activate /home/sunam225/miniconda3/miniconda4.9.2/usr/etc/profile.d/conda.sh/envs/anvio-7.1
 ```
-Examine all .db files:
+All .db files were prepared for examination by the following command:
 ```
 anvi-display-contigs-stats *db
 ```
@@ -19,14 +19,14 @@ Server data:
 - node010
 - port 8084
 
-Access server with another terminal:
+The server was accessed with another terminal:
 
 ```
 ssh -L 8060:localhost:8084 sunam237@caucluster-old.rz.uni-kiel.de
 ssh -L 8080:localhost:8084 node010
 ```
 
-Access interface in brother with http://127.0.0.1:8060.
+The interface was accessed in a browser with http://127.0.0.1:8060.
 
 Questions:
 
