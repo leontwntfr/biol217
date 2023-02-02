@@ -2,7 +2,7 @@
 
 data("midwest")
 
-## pop in state (boxplot)
+## popdensity in state (boxplot)
 
 popdens <- ggplot(midwest, aes(state, popdensity, fill = state)) + geom_boxplot(coef = 6)
 
@@ -10,7 +10,7 @@ popdens + ylim(min = 0, max = 5000) +
   scale_fill_hue(name = "State", labels = c("Illinois", "Indiana", 'Michigan', 'Ohio', 'Wisconsin')) + 
   labs(y = 'Population density', x = 'State', title = 'Comparison of Population Densities Among Midwestern States')
 
-ggsave('popdens.pdf', height = 6, width = 8, unit = 'in', dpi = 300)
+ggsave('popdens.png', height = 6, width = 8, unit = 'in', dpi = 300)
 
 
 
@@ -22,7 +22,7 @@ pop + ylim(min = 0, max = 100000) +
   scale_fill_hue(name = "State", labels = c("Illinois", "Indiana", 'Michigan', 'Ohio', 'Wisconsin')) + 
   labs(y = 'Population', x = 'State', title = 'Comparison of Total Populations Among Midwestern States')
 
-ggsave('pop.pdf', height = 6, width = 8, unit = 'in', dpi = 300)
+ggsave('pop.png', height = 6, width = 8, unit = 'in', dpi = 300)
 
 
 ## county count
@@ -30,7 +30,7 @@ ggsave('pop.pdf', height = 6, width = 8, unit = 'in', dpi = 300)
 county <- ggplot(midwest, aes(state)) + geom_bar() + 
   scale_x_discrete(labels= c("Illinois", "Indiana", 'Michigan', 'Ohio', 'Wisconsin'))
 
-ggsave('counties.pdf', height = 6, width = 8, unit = 'in', dpi = 300)
+ggsave('counties.png', height = 6, width = 8, unit = 'in', dpi = 300)
 
 ## poverty - college
 
@@ -39,7 +39,7 @@ pov_college <- ggplot(midwest, aes(percollege, percbelowpoverty, col = state)) +
   geom_smooth(se = FALSE) +
   labs(y = 'Percentage of population below poverty line', x = 'Percentage of population with college education', title = 'Below Poverty Line - College Education Plot for Midwestern States')
 
-ggsave('pover_college.pdf', height = 6, width = 8, unit = 'in', dpi = 300)
+ggsave('pover_college.png', height = 6, width = 8, unit = 'in', dpi = 300)
 
 
 
@@ -61,7 +61,7 @@ ggplot(chickwts, aes(feed, weight)) + geom_boxplot(coef = 6) +
   labs(y = 'Weight of chicks [g]', x = 'Feed type', title = 'Comparison of Weights of Chicks Given Different Feed After Six Weeks') + 
   scale_x_discrete(labels= c("Casein", "Horsebean", 'Linseed', 'Meatmeal', 'Soybean', 'Sunflower'))
 
-ggsave('chicksfeedtype.pdf', height = 6, width = 8, unit = 'in', dpi = 300)
+ggsave('chicksfeedtype.png', height = 6, width = 8, unit = 'in', dpi = 300)
 
 
 
