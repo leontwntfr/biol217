@@ -461,7 +461,7 @@ Does the quality of your ARCHAEA improve?
 
 - completeness/redundancy (before): 97.37%/5.26%
 - completeness/redundancy (after): 93.42%/5.26%
-- the quality did not improve but, based on coverage, obvious outlier regions were removed
+- the quality did not improve but, based on coverage, obvious outlier regions were removed (refined bin is marked in purple)
 
 ![image](./resources/interactive_2_refinement.png)
 
